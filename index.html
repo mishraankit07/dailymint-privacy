@@ -165,7 +165,9 @@
       <li>Transaction details you enter, including names, amounts, dates, categories, and
         whether an amount represents spending, income, investment, or a personal share.</li>
       <li>Bank transaction message content and sender information that you explicitly pass
-        to DailyMint through an Apple Shortcuts automation.</li>
+        to DailyMint through an Apple Shortcuts automation. When a transaction is recognized,
+        this source information is stored with the resulting ledger entry on your device.
+        Messages that are ignored or cannot be recognized are not retained.</li>
       <li>Your app preferences, including categories, tracking-cycle settings, theme,
         reminder settings, and automatic-import notification preference.</li>
     </ul>
@@ -203,9 +205,9 @@
       DailyMint requests notification permission. Notifications are scheduled and delivered
       using Apple's notification services.</p>
     <h2>6. Storage and security</h2>
-    <p>DailyMint stores its ledger, preferences, and imported transaction information in
-      the app's private storage on your device. The app uses platform storage protections
-      and takes reasonable steps to avoid exposing this information to other apps.</p>
+    <p>DailyMint stores its ledger, preferences, and recognized imported transaction
+      information in the app's private storage on your device. The app uses platform storage
+      protections and takes reasonable steps to avoid exposing this information to other apps.</p>
     <p>Your device or app data may be included in backups managed by Apple, depending on
       your device and backup settings. Those backups are governed by your agreement with
       Apple. No method of electronic storage is guaranteed to be completely secure.</p>
